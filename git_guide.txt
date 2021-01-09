@@ -1,0 +1,120 @@
+### **Quick setup — if you’ve done this kind of thing before**
+
+**[Set up in Desktop](https://desktop.github.com/)**
+
+**or**
+
+**HTTPSSSH**
+
+Get started by [creating a new file](https://github.com/ElonJang/dododo/new/main) or [uploading an existing file](https://github.com/ElonJang/dododo/upload). We recommend every repository include a [README](https://github.com/ElonJang/dododo/new/main?readme=1), [LICENSE](https://github.com/ElonJang/dododo/new/main?filename=LICENSE.md), and [.gitignore](https://github.com/ElonJang/dododo/new/main?filename=.gitignore).
+
+### **…or create a new repository on the command line**
+
+```
+echo "# dododo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ElonJang/dododo.gitgit push -u origin main
+                
+```
+
+### **…or push an existing repository from the command line**
+
+```
+git remote add origin https://github.com/ElonJang/dododo.gitgit branch -M main
+git push -u origin main
+```
+
+
+♬ github 설명 강의 ♬
+by 아시겠쬬?하는 강사
+
+여기선 뭐하냐? 장소마다 다른 역할.
+
+Working directory -> 누가 버전이 될까? add로 골라라
+Staging Area      -> commit 너, 내 버전이 되라
+Resistory         -> Remote로 Push
+
+깃으로 1. 코드저장하고 2. 과거 조회, 되돌리기하고, 3.
+
+♬ 시작, 상태 확인, 스테이지에 올리기
+git init                                       - git 시작
+git status                                   - git 상태 확인
+git add Connet to GH.txt          - Connect to GH.txt를 스테이지에 추가
+git add .                                     - 워킹 디렉토리의 모든 파일 추가
+
+♬ 스테이지에 올리면
+git rm --cached Filename             - File을 스테이지에서 제거
+git commit -am "수정 브리핑"       - add+commit 동시수정
+git commit -m "버전 브리핑"        - commit 브리핑
+git commit                                     - commit 설명
+git log                                           - commit 내역 확인
+
+♬ 돌려놔
+git reset --hard HEAD^      xxx  - 전부 수정
+git reset --mixed HEAD^     oxx  - add 이상 수정
+git reset --soft HEAD^      oox  - commit 이상 수정
+*HEAD : 가장 최근의, ^ : 하나, ^^: 둘....
+git diff ???????
+git revert ?????
+
+♬ 새 저장소 만들기
+…or create a new repository on the command line
+echo "# Test" >> [README.md](http://readme.md/)
+git init
+git add [README.md](http://readme.md/)
+git commit -m "first commit"
+git branch -M main
+git remote add origin [https://github.com/ElonJang/gitit.git](https://github.com/ElonJang/gitit.git)
+git push -u origin main
+
+♬ 저장소에서 올리기
+…or push an existing repository from the command line
+git remote add origin [https://github.com/ElonJang/gitit.git](https://github.com/ElonJang/gitit.git)
+git branch -M main
+git push -u origin main
+git
+♬ 다른 저장소에서 코드 가져오기
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+♬ Branch 운영
+git branch branch_name              - 새 브랜치 만들기
+git branch                          - 브랜치 리스트
+git checkout branch_name            - 브랜치 전환
+git push --set-upstream origin branch_name - 새 브랜치를 원격저장소로 등록
+git push
+main 브랜치에서 git merge branch_name 하면 해당브랜치를 main 브랜치로 합친다.
+
+♬ Repostory끼리의 상호작용
+
+- 원격 저장소 추가 - git remote add <name> <url>
+- 원격 저장소 조회 - git remote `v` (: 상세 )
+- 원격 저장소로 보내 - git push -u origin master
+(: oigin master 디폴트 설정)
+- 원격 저장소 흡수해 - git pull `origin master`
+- 원격 저장소 가져와 - git fetch `origin master`
+- 원격 저장소 복사해 - git clone <url>
+// 원격 저장소와 로컬 저장소에 있는 파일을 삭제한다.
+$ git rm [File Name]
+// 원격 저장소에 있는 파일을 삭제한다. 로컬 저장소에 있는 파일은 삭제하지 않는다.
+$ git rm --cached [File Name]
+[https://gmlwjd9405.github.io/2018/05/17/git-delete-incorrect-files.html](https://gmlwjd9405.github.io/2018/05/17/git-delete-incorrect-files.html)
+// .idea/modules.xml 파일 삭제
+$ git rm --cached .idea/modules.xml
+// .idea 폴더 하위의 모든 파일 삭제
+$ git rm --cached -r .idea/
+[https://gmlwjd9405.github.io/2018/05/17/git-delete-incorrect-files.html](https://gmlwjd9405.github.io/2018/05/17/git-delete-incorrect-files.html)
+
+♬ 협업의 세 가지 시나리오
+
+1. 내 로컬 변하고 원격 노변
+Push
+2. 내 로컬 노변 원격 변하고
+Git pull로 동기화 후, Push
+3. 내 로컬 변하고 원격 변하고
+    1. Rebase or 2) Pull request
+4. 소규모 or 대면의 경우 collaborate
+5. 대규모의 경우 pull request를 이용한다.
