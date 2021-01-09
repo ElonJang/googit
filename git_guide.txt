@@ -1,32 +1,16 @@
-### **Quick setup — if you’ve done this kind of thing before**
-
-**[Set up in Desktop](https://desktop.github.com/)**
-
-**or**
-
-**HTTPSSSH**
-
-Get started by [creating a new file](https://github.com/ElonJang/dododo/new/main) or [uploading an existing file](https://github.com/ElonJang/dododo/upload). We recommend every repository include a [README](https://github.com/ElonJang/dododo/new/main?readme=1), [LICENSE](https://github.com/ElonJang/dododo/new/main?filename=LICENSE.md), and [.gitignore](https://github.com/ElonJang/dododo/new/main?filename=.gitignore).
-
-### **…or create a new repository on the command line**
-
-```
-echo "# dododo" >> README.md
+…or create a new repository on the command line
+echo "# googit" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/ElonJang/dododo.gitgit push -u origin main
-                
-```
-
-### **…or push an existing repository from the command line**
-
-```
-git remote add origin https://github.com/ElonJang/dododo.gitgit branch -M main
+git remote add origin https://github.com/ElonJang/googit.git
 git push -u origin main
-```
-
+                
+…or push an existing repository from the command line
+git remote add origin https://github.com/ElonJang/googit.git
+git branch -M main
+git push -u origin main
 
 ♬ github 설명 강의 ♬
 by 아시겠쬬?하는 강사
@@ -67,12 +51,12 @@ git init
 git add [README.md](http://readme.md/)
 git commit -m "first commit"
 git branch -M main
-git remote add origin [https://github.com/ElonJang/gitit.git](https://github.com/ElonJang/gitit.git)
+git remote add origin https://github.com/ElonJang/googit.git
 git push -u origin main
 
 ♬ 저장소에서 올리기
 …or push an existing repository from the command line
-git remote add origin [https://github.com/ElonJang/gitit.git](https://github.com/ElonJang/gitit.git)
+git remote add origin https://github.com/ElonJang/googit.git
 git branch -M main
 git push -u origin main
 git
