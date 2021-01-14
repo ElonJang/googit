@@ -102,3 +102,10 @@ Git pull로 동기화 후, Push
     1. Rebase or 2) Pull request
 4. 소규모 or 대면의 경우 collaborate
 5. 대규모의 경우 pull request를 이용한다.
+
+
+에러대처법 
+1.  ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://03e2a2842a2b4bfd449a5e17a878d8b1133fb
+cd0@github.com/ElonJang/googit.git'
+-> git pull --rebase origin main
