@@ -1,13 +1,17 @@
 <DOCTYPE html>
 <html>
-    <body>
-      <!-- Load TensorFlow.js. This is required to use MobileNet. -->
+
+    
+<body>
+    <!-- Load TensorFlow.js. This is required to use MobileNet. -->
+    <!-- 텐서 플로우 js 라이브러리를 로드하는 코드 -->
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"> </script>
 <!-- Load the MobileNet model. -->
+<!-- MobileNet이라는 모델을 로드하는 코드-->
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
 
 <!-- Replace this with your image. Make sure CORS settings allow reading the image! -->
-<img id="img" src="cat.jpg"></img>
+<img id="img" src="dog.jpg"></img>
 
 <!-- Place your code in the script tag below. You can also use an external .js file -->
 <script>
@@ -24,6 +28,6 @@
       console.log(predictions);
     });
   });
-</script>  
+</script>
     </body>
-</html>
+    </html>
