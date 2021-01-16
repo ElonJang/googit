@@ -1,4 +1,13 @@
-hello world
-<h1>
-    hello world
-</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    {% for i in cafelist %}
+    <h1>{{i.name}}</h1>
+    <p>{{i.content}}</p>
+    {% endfor %}
+</body>
+</html>
