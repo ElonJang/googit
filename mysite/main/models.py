@@ -5,5 +5,8 @@ from django.db import models
 class Cafe(models.Model):
     name = models.CharField(max_length=50)
     content = models.TextField()
-    created = models.DatetimeField(auto_now_add=True)
+    created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.name
