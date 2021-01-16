@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 't^_#s5z@p%i2*-^k*1a6x*n5mwm&v#ccs-s-l8hs(u@h=ff-(r'
+SECRET_KEY = '^8ppab*%sw(cg&8v5beyc#t1e3g574up-dvwvw@if@=91brw49'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.extensions'
     'main',
 ]
 
@@ -78,7 +77,7 @@ WSGI_APPLICATION = 'tutorialdjango.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': str(BASE_DIR / 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
