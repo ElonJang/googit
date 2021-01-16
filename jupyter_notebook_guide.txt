@@ -1,0 +1,99 @@
+mkdir mysite
+# 폴더만들고
+
+cd mysite
+# 폴더로 이동하고
+
+pip install --upgrade pip
+# 핍 전체를 업그레이드한다.
+
+pip install virtualenv
+#가상환경을 설치하고
+
+virtualenv myvenv
+# 'myvenv'라는 가상환경을 만들고 
+## 문제가 생기면 서버를 전체를 옮길 수 있다.
+
+source myvenv/bin/activate
+# 가상환경 속으로, 활성화
+
+pip list
+# 가상환경에 가장 기본적인 패키지만 설치된 것을 알 수 있다.
+
+pip install django
+# 최신버전의 장고를 설치
+
+django-admin startproject tutorialdjango .
+# 현재폴더에 튜토리얼장고란 이름으로 새로운 프로젝트를 시작하겠다.
+
+python manage.py migrate
+# DB에 반영하겠다.
+
+# settings의 28번쨰출 '*' 넣기 cirl+S
+
+python manage.py runserver 0:80
+# 서버를 실행하고 실행url에 가서 사이트를 연다.
+
+python manage.py startapp main
+# 메인이라는 앱을 하나 만든다.
+
+
+# setting.py에 INSTALLED_APPS 여기다 main 앱 추가
+'main',
+
+# uls.py에 들어가서 아래와 같이 추가 한다.
+from main.views import index
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', index),
+]
+
+# 메인폴더 views.py에 아래 코드 넣기
+def index(request):
+    return render(request, 'main/index.html')
+
+# 템플렛 넣기 (암묵적 규칙성이다)
+# 메인 폴더에  templates 폴더 만들고, 그 폴더에 main 폴더를 만든다.
+    그리고 그 폴더 안에 index.html 만들고 hello world 작성
+python manage.py runserver 0:80
+#서버실행하면 서버에 hello world 문구 표현
+
+#제주 카페 모델 구현. models.py 안에 추가
+class Cafe(models.Model):
+    name = models.CharField(max_length=50)
+    content = models.TextField()
+    created = models.DatatimeField(auto_now_add=True)
+    modified = models.DataTimeField(auto_now=True)
+    
+python manage.py makemigrations
+# 파이썬으로 DB를 만들 수 있는 코드실행
+
+python manage.py migrate
+# 직접 DB에 반영하겠다
+
+python manage.py createsuperuser
+# 관리자생성
+
+python manage.py runserver 0:80
+#서버 실행하고 주소에 /admin 넣어서 관리자페이지행
+
+#admin.py에 사이트 등록 코드 추가 
+admin.site.register(Cafe)
+
+# 내 사이트에 카페이름이랑 내용넣기
+# 이름이 정확히 기입안되니 models.py에 아래코드
+ def __str__(self):
+        return self.name
+        
+# 데이터분석을 위해 몇가지 모듈 추가
+pip install django-extensions
+pip install jupyterlab
+# 그래도 주트북이 안된다면
+pip install notebook
+
+#settings에 장고확장앱 추가
+'django_extensions'pip
+
+#주트북 실행
+jupyter notebook -ip=0.0.0.0 --port=80 --allow-root
+
