@@ -73,7 +73,7 @@ git push
 main 브랜치에서 git merge branch_name 하면 해당브랜치를 main 브랜치로 합친다.
 
 ♬ Repostory끼리의 상호작용
-
+dasdasdas
 - 원격 저장소 추가 - git remote add <name> <url>
 - 원격 저장소 조회 - git remote `v` (: 상세 )
 - 원격 저장소로 보내 - git push -u origin master
