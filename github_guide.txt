@@ -110,3 +110,10 @@ error: failed to push some refs to 'https://03e2a2842a2b4bfd449a5e17a878d8b1133f
 cd0@github.com/ElonJang/googit.git'
 -> git pull --rebase origin main
 dasddsdasd
+
+
+mysql
+https://dalconbox.tistory.com/37
+sudo vi /etc/mysql/mysql.conf.d/mysql.cnf
+
+출처: https://dalconbox.tistory.com/37 [달콘박스]
