@@ -1,2 +1,3 @@
 2.12 인프런에서 첫SQL 123456789
 1.10 코세라에서 Python for everybody 123456789
+dasdas
