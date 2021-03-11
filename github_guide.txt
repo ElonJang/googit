@@ -117,3 +117,4 @@ https://dalconbox.tistory.com/37
 sudo vi /etc/mysql/mysql.conf.d/mysql.cnf
 
 출처: https://dalconbox.tistory.com/37 [달콘박스]
+dsadas
