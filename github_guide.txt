@@ -13,10 +13,7 @@ git branch -M main
 git push -u origin main
 
 ♬ github 설명 강의 ♬
-by 아시겠쬬?하는 강사
-dasdas
 여기선 뭐하냐? 장소마다 다른 역할.
-dasdasdsa
 Working directory -> 누가 버전이 될까? add로 골라라
 Staging Area      -> commit 너, 내 버전이 되라
 Resistory         -> Remote로 Push
@@ -117,6 +114,3 @@ https://dalconbox.tistory.com/37
 sudo vi /etc/mysql/mysql.conf.d/mysql.cnf
 
 출처: https://dalconbox.tistory.com/37 [달콘박스]
-dsadasdasdas
-dsadas
-dsadasdsa
