@@ -77,7 +77,7 @@ dasdasdas
 - 원격 저장소로 보내 - git push -u origin master
 (: oigin master 디폴트 설정)
 - 원격 저장소 흡수해 - git pull `origin master`
-- 원격 저장소 가져와 - git fetch `origin master`
+- 원격 저장소 가져와 - git fetch `origin master`dsds
 - 원격 저장소 복사해 - git clone <url>
 // 원격 저장소와 로컬 저장소에 있는 파일을 삭제한다.
 $ git rm [File Name]
