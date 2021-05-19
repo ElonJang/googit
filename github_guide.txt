@@ -60,6 +60,7 @@ git
 ♬ 다른 저장소에서 코드 가져오기
 …or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+dsds
 
 ♬ Branch 운영
 git branch branch_name              - 새 브랜치 만들기
