@@ -93,6 +93,6 @@ pip install notebook
 
 #settings에 장고확장앱 추가
 'django_extensions'pip
-
+dsadsad
 #주트북 실행
 jupyter notebook --ip=0.0.0.0 --port=80 --allow-root
