@@ -25,7 +25,7 @@ pip install django
 
 django-admin startproject tutorialdjango .
 # 현재폴더에 튜토리얼장고란 이름으로 새로운 프로젝트를 시작하겠다.
-
+dsadas
 python manage.py migrate
 # DB에 반영하겠다.
 
