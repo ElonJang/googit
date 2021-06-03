@@ -47,7 +47,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
 ]
-
+sdsd
 # 메인폴더 views.py에 아래 코드 넣기
 def index(request):
     return render(request, 'main/index.html')
