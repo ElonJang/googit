@@ -28,7 +28,7 @@ django-admin startproject tutorialdjango .
 dsadas
 python manage.py migrate
 # DB에 반영하겠다.
-ss
+sssss
 # settings의 28번쨰출 '*' 넣기 cirl+S
 
 python manage.py runserver 0:80
