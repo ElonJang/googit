@@ -39,4 +39,5 @@ cs50
 cs50
 cs50
 no work
-com setting    
+com setting  
+com set
