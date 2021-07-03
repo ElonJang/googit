@@ -41,3 +41,4 @@ cs50
 no work
 com setting  
 com set
+com set    
