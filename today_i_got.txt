@@ -42,3 +42,4 @@ no work
 com setting  
 com set
 com set    
+com set
