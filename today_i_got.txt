@@ -43,3 +43,4 @@ com setting
 com set
 com set    
 com set
+cs50
