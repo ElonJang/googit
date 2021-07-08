@@ -44,3 +44,4 @@ com set
 com set    
 com set
 cs50
+com set
