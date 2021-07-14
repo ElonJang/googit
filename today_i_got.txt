@@ -49,4 +49,5 @@ com set
 cs
 cs 50 
 com set
-com set    
+com set
+cs
